@@ -18,6 +18,7 @@
 #include "tmeconfig.h"
 #include "snd.h"
 #include "disp.h"
+#include "rtc.h"
 
 static void *loadRom(char *file) {
 	int i;

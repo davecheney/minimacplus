@@ -28,9 +28,7 @@
 #include "snd.h"
 #include "mouse.h"
 #include <stdbool.h>
-#include "esp_heap_caps.h"
 #include <byteswap.h>
-#include "esp_spiram.h"
 #include "network/localtalk.h"
 
 

@@ -7,6 +7,4 @@ int ethertalk_send_short_ddp(uint8_t *data, int size, uint8_t srcnode, uint8_t d
 void ethertalkInit();
 void ethertalkTick();
 
-
-
 #endif

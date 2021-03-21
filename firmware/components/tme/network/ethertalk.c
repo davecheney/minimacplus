@@ -15,6 +15,9 @@
 #include "basiliskif.h"
 #include "hexdump.h"
 #include "ddp.h"
+#include "sniff.h"
+#include "ethertalk.h"
+#include "localtalk.h"
 
 //Set to something random. Warning: be sure to initialize rand() first.
 static uint8_t myMac[6];

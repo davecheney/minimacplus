@@ -7,6 +7,7 @@
  * ----------------------------------------------------------------------------
  */
 #include <stdio.h>
+#include <stdlib.h>
 #include <stdint.h>
 #include "via.h"
 #include "m68k.h"

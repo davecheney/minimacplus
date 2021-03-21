@@ -1,6 +1,4 @@
 
-#include <sdkconfig.h>
-
 #define TME_ROMSIZE (128*1024)
 
 #ifdef CONFIG_SPIRAM_SUPPORT_MALLOC
