@@ -3,7 +3,7 @@
 TARGET:=tme
 MUSASHI_GEN_SRC:=musashi/m68kopac.c musashi/m68kopdm.c musashi/m68kopnz.c
 MUSASHI_OP_PREGEN_SRC:=musashi/m68kops_pre.c 
-OBJ:=$(MUSASHI_GEN_SRC:%.x=%.o) $(MUSASHI_OP_PREGEN_SRC:%.x=%.o) musashi/m68kcpu.o  sdl/main.o sdl/disp.o sdl/hd.o sdl/snd.o \
+OBJ:=$(MUSASHI_GEN_SRC:%.c=%.o) $(MUSASHI_OP_PREGEN_SRC:%.c=%.o) musashi/m68kcpu.o  sdl/main.o sdl/disp.o sdl/hd.o sdl/snd.o \
 			emu.o iwm.o via.o rtc.o ncr.o scc.o mouse.o hexdump.o network/localtalk.o network/ddp.o \
 			network/ethertalk.o network/basiliskif.o network/sniff.o
 #musashi/m68kdasm.o
