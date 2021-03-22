@@ -6,8 +6,7 @@ OBJ:=$(MUSASHI_GEN_SRC:%.c=%.o) musashi/m68kcpu.o musashi/softfloat/softfloat.o 
 	sdl/main.o sdl/disp.o sdl/hd.o sdl/snd.o \
 	emu.o iwm.o via.o rtc.o ncr.o scc.o mouse.o hexdump.o \
 	network/localtalk.o network/ddp.o network/ethertalk.o network/basiliskif.o network/sniff.o
-#musashi/m68kdasm.o
-CFLAGS=-Wall -I. -I./musashi -I./hostbuild -I/opt/local/include -O3 -ggdb `sdl2-config --cflags` -DHOSTBUILD -DMUSASHI_CNF=\"m68kconf.h\" 
+CFLAGS=-Wall -I. -I./musashi -I./hostbuild -I/opt/local/include -Og -ggdb `sdl2-config --cflags` -DHOSTBUILD -DMUSASHI_CNF=\"m68kconf.h\"
 LDFLAGS=`sdl2-config --libs` -lm
 
 $(TARGET): $(OBJ)

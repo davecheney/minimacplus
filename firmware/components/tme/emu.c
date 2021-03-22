@@ -28,7 +28,12 @@
 #include "snd.h"
 #include "mouse.h"
 #include <stdbool.h>
+#ifdef __linux__
 #include <byteswap.h>
+#elif defined(__APPLE__)
+#include <libkern/OSByteOrder.h>
+#define __bswap_16 OSSwapInt16
+#endif
 #include "network/localtalk.h"
 
 
