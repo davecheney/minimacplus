@@ -1,0 +1,3 @@
+[submodule "firmware/components/tme/musashi"]
+	path = firmware/components/tme/musashi
+	url = https://github.com/kstenerud/Musashi.git
